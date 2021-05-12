@@ -3401,13 +3401,6 @@ blockquote footer cite:before {
   -moz-background-size: cover;
   background-size: cover;
 }
-#footer:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  content: '';
-}
 #footer-wrap {
   position: relative;
   padding: 2rem 1rem;
@@ -4638,6 +4631,9 @@ _:future,
   background: transparent;
   content: '';
   line-height: 0.42em;
+}
+#article-container > :last-child {
+  margin-bottom: 0 !important;
 }
 #post .tag_share .post-meta__tag-list {
   display: inline-block;
