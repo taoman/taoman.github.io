@@ -337,10 +337,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const $header = document.getElementById('page-header')
     const isChatBtnHide = typeof chatBtnHide === 'function'
     const isChatBtnShow = typeof chatBtnShow === 'function'
-    const randomImg = ['https://www.liquanquan.top/assets/images/EXAfxlEUEAAn9gt.jpeg','https://www.liquanquan.top/assets/images/EJtwAn-UEAA4Vmg.jpeg','https://www.liquanquan.top/assets/images/ETUFu1PU8AAiTvH.jpeg','https://www.liquanquan.top/assets/images/ETxKvVtU8AAh-m0.jpeg','https://www.liquanquan.top/assets/images/EUp4NHrUcAAgwi_.jpeg']
-    
-    const Subscript = Math.floor(Math.random()*4)
-    $header.style.backgroundImage = 'url('+randomImg[Subscript]+')'
+    const Subscript = Math.floor(Math.random()*20)
+    $header.style.backgroundImage = 'url(https://www.liquanquan.top/assets/images/butterfly'+Subscript+'.jpeg)'
     window.addEventListener('scroll', btf.throttle(function (e) {
       const currentTop = window.scrollY || document.documentElement.scrollTop
       const isDown = scrollDirection(currentTop)
